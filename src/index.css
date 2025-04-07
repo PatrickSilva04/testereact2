@@ -1,6 +1,6 @@
 :root {
-  --text: white;
-  --bg: black; 
+  --text: #ffffff;
+  --bg: #090909;
 }
 
 *{
@@ -21,4 +21,3 @@ section{
   min-height: 80vh;
   padding-top: 2.5vh;
 }
-
