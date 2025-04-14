@@ -1,18 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Analytics } from "@vercel/analytics/react"
-import Calcs from './calcs.jsx';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
-
 import './index.css'
-import App from './App.jsx'
-import Contact from './Contact.jsx'
+import { Analytics } from "@vercel/analytics/react"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+import App from './App.jsx'
+import Contact from './Contact.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,10 +23,9 @@ const router = createBrowserRouter([
     element: <Contact/>,
   },
   {
-    patch: "/calcs",
-      element: <calcs/>
-    
-  }
+    path: "/calcs",
+    element: <Calcs/>,
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(
