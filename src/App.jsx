@@ -1,6 +1,6 @@
 import style from './App.module.css'
 import { cards } from './assets/mock/cards.js'
-import { Menu } from './components/menu.jsx'
+import { Menu } from './components/Menu.jsx'
 // import img01 from './assets/images/img01.jpg'
 import { useState } from 'react'
 
