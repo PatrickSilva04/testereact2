@@ -12,6 +12,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 import App from './App.jsx'
 import Contact from './Contact.jsx'
+import Calcs from './calcs.jsx';
 
 const router = createBrowserRouter([
   {
