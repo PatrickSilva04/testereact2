@@ -1,4 +1,4 @@
-import style from './Calcs.module.css'
+import style from './calcs.module.css'
 import { useState, useEffect } from 'react'
 
 export default function Calcs(){
