@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import style from './Req.module.css'
-import { apiRick } from './api/api'
-import { Card } from './Components/card'
+import { apiRick } from './Api/Api.js'
+import { Card } from './Components/Card.jsx'
 
 export default function Req(){
     const [data, setData] = useState([])
