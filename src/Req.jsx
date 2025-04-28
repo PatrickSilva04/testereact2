@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react'
 import style from './Req.module.css'
 import { apiRick } from './Api/Api.js'
 import { Card } from './Components/Card.jsx'
+import { Tilt } from 'react-tilt'
 
 export default function Req(){
     const [data, setData] = useState([])
     const [page, setPage] = useState("")
     const [searchName, setSearchName] = useState("")
-
     const [erro, setErro] = useState(false)
 
     useEffect(() => {
@@ -22,7 +22,8 @@ export default function Req(){
     }, [page, searchName])
 
     return(
-        <section className={style.wrapPage}>
+        <>
+         <section className={style.wrapPage}>
             <h1 className={style.titleName}>Rick and Morty API</h1>
             <input
               style={{padding: "10px", marginRight: "10px"}}  
@@ -50,5 +51,7 @@ export default function Req(){
             })}
             </div>
         </section>
+        </>
+       
     )
 }
