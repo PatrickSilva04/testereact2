@@ -1,6 +1,6 @@
 import style from './App.module.css'
-import { cards } from './assets/mock/cards.js'
-import { Menu } from './Components/Menu.jsx'
+import { cards } from './assets/mock/cards'
+import { Menu } from './components/menu'
 // import img01 from './assets/images/img01.jpg'
 import { useState } from 'react'
 
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-     <Menu option01='Sessão 01' option02='Sessão 02' option03='Mapa e contato' option04='Cálculos'/>
+     <Menu option01='Sessão 01' option02='Sessão 02' option03='Mapa e contato' option04='Cálculos' option05='Api'/>
      <main>
       <section id='s1' className={style.s1}>
         {/* <img src={img01} alt="o amor esta no ar" width={200} height={"auto"}/> */}

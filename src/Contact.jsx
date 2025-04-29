@@ -5,7 +5,9 @@ import "leaflet-defaulticon-compatibility";
 import { useState, useEffect } from "react";
 import { Menu } from "./components/menu";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import { Location } from "./Components/spinner";
+import { Loading } from './Components/spinner';
+
+
 
 function Contact() {
   const [cep, setCep] = useState("80510-070");

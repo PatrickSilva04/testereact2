@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react'
 import style from './Req.module.css'
 import { apiRick } from './Api/Api.js'
 import { Card } from './Components/Card.jsx'
-import { Tilt } from 'react-tilt'
+import Tilt from 'react-parallax-tilt';
+
+<Tilt tiltMaxAngleX={25} tiltMaxAngleY={25} style={{ height: 250, width: 250 }}>
+  <div className="Tilt-inner">Conteúdo aqui</div>
+</Tilt>
 
 export default function Req(){
     const [data, setData] = useState([])
